@@ -1,0 +1,42 @@
+body {margin: 0; padding: 0;}
+header {width: 100%;}
+main {width: 100%;}
+footer {width: 100%;}
+ul {margin: 0; padding: 0; list-style: none;}
+nav {float: right; width: 100%; background: #000000; font-weight: bold; font-family: Verdana, sans-serif; color: #ffffff;}
+    nav li {float: right; cursor: pointer}
+
+
+/*Smartphone------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+nav {height: 50px;}
+    nav li{position: relative; float: right; top: 51px; width: 90%; display: none; background: gray; height: 30px; padding-top: 10px; padding-left: 10px; padding-bottom: 5px; border-bottom: 1px #ffffff solid; color: blue;}
+
+
+.ind-botao{position: absolute; width: 90%; padding-right: 10%; top: 3px; cursor: pointer; text-align: right;}
+
+.ind-logo{position: absolute; width: 25%; left: 0; top: 3px; text-align: center;}
+    .ind-logo img{margin-top: 10px; max-height: 30px;}
+}
+
+/*Tablet----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+nav {height: 50px;}
+    nav li{position: relative; float: right; top: 51px; width: 90%; display: none; background: gray; height: 30px; padding-top: 10px; padding-left: 10px; padding-bottom: 5px; border-bottom: 1px #ffffff solid; color: blue;}
+
+.ind-botao{position: absolute; width: 90%; padding-right: 10%; top: 3px; cursor: pointer; text-align: right;}
+
+.ind-logo{position: absolute; width: 25%; left: 0; top: 3px; text-align: center;}
+    .ind-logo img{margin-top: 5px; max-height: 40px;}
+}
+
+/*Desktop---------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 769px){
+nav {height: 50px; padding-right: 0; padding-top: 25px;}
+    nav li {width: 10%; text-align: right;}
+
+.ind-botao{display: none;}
+
+.ind-logo{position: absolute; width: 25%; left: 0; top: 3px; text-align: center;}
+    .ind-logo img{margin-top: 10px; max-width: 100%;}
+}
